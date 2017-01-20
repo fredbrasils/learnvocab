@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 7, 2016, 10:57:20 AM
+    Author     : x459
+*/
+
+/* Messages */
+.box-message{
+    width: 30%;
+    position: absolute;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px 12px;    
+    text-align: center;
+    vertical-align: middle;
+    left: 50%;
+    margin: 0 0 0 -15%;    
+    top:20px;
+    line-height: 2em;
+    
+    -webkit-animation: slideMessage 2s;
+            animation: slideMessage 2s;
+            
+    z-index: 99999;
+                       
+}
+
+.success{
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.success:hover{
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.error{
+  background-color: #d9534f;
+  border-color: #d43f3a;  
+}
+
+.error:hover{
+  background-color: #c9302c;
+  border-color: #ac2925;  
+}
+
+.info{
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.info:hover{
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+.warning{
+  background-color: #ec971f;
+  border-color: #985f0d;  
+}
+
+.warning:hover{
+  background-color: #ec971f;
+  border-color: #d58512;  
+}
+
+@-webkit-keyframes slideMessage {
+    from {
+        opacity: 0;
+        top:0;
+    }
+    
+    to{
+        opacity: 1;
+        top:20px;        
+    }
+}
+@keyframes slideMessage {
+    from {
+        opacity: 0;
+        top:0;
+        display: inline;
+    }
+    
+    to{
+        opacity: 1;
+        top:20px;
+    }
+}
+/*
+@-webkit-keyframes closeMessage {
+    0%,85% {
+        opacity: 1;
+        display: inline;
+    }
+    
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes closeMessage {
+    0%,85% {
+        opacity: 1;        
+        display: inline;
+    }
+    
+    100%{
+        opacity: 0;        
+    }
+}*/
