@@ -134,7 +134,7 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter{
         resolver.setContentNegotiationManager(manager);
         return resolver;
     }
-    
+
     /* Locale das telas */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
